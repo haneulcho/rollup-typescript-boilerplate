@@ -1,0 +1,55 @@
+html {
+	font-size: $base-font-size;
+}
+
+body, h1, h2, h3, h4, h5, h6, th, td, input, select, textarea, button {
+	font-family: $base-font-system;
+	letter-spacing: $base-letter-spacing;
+}
+
+html, body {
+	min-width: $min-width;
+	background: $background-color;
+	box-sizing: border-box;
+	-webkit-text-size-adjust: 100%;
+}
+
+body.locked-scroll {
+	overflow: hidden;
+	pointer-events: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+::selection {
+	@if ($selection-color) {
+		background-color: $selection-color;
+		text-shadow: none;
+	}
+}
+
+audio,
+canvas,
+iframe,
+svg,
+video {
+	vertical-align: middle;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+option,
+optgroup {
+	color: initial;
+}
+
+textarea {
+	resize: vertical;
+}
